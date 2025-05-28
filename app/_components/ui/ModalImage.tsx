@@ -26,7 +26,7 @@ function ModalImage({
       className={`object-contain shadow transition duration-300 hover:opacity-50 ${
         showOverlay ? "opacity-30 blur-sm" : ""
       } ${className}`}
-      unoptimized
+      quality={80}
     />
   );
 }

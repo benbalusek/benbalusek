@@ -30,8 +30,9 @@ function AboutMeModalContent({ image, onClose }: AboutMeModalProps) {
           alt={image.alt}
           width={image.width}
           height={image.height}
-          className="object-contain w-full max-h-[85vh] shadow"
-          unoptimized
+          className="object-contain w-full max-h-[85vh] shadow cursor-pointer"
+          quality={80}
+          onClick={onClose}
         />
       </div>
     </Modal>

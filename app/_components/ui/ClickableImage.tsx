@@ -38,7 +38,7 @@ function ClickableImage({
         width={width}
         height={height}
         className="w-full object-cover hover:opacity-60 shadow"
-        unoptimized
+        quality={80}
       />
     </div>
   );

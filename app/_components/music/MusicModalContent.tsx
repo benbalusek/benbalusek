@@ -25,46 +25,68 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
       className="max-h-[90vh] w-full max-w-2xl flex flex-col"
     >
       <ToggleableOverlay setShowOverlay={setShowOverlay} className="mb-4">
-        {/* Show Overlay Hint */}
-        {!showOverlay && <OverlayHint />}
+        <div className="relative w-full group">
+          {/* Show Overlay Hint */}
+          {!showOverlay && <OverlayHint />}
 
-        {/* Modal Image */}
-        <ModalImage
-          src={album.mediumSrc}
-          alt={album.alt}
-          width={1000}
-          height={1000}
-          showOverlay={showOverlay}
-        />
+          {/* Modal Image */}
+          <ModalImage
+            src={album.mediumSrc}
+            alt={album.alt}
+            width={1000}
+            height={1000}
+            showOverlay={showOverlay}
+          />
 
-        {/* Show Overlay Details */}
-        {showOverlay && (
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-            {/* Album Details */}
-            <h2 className="text-xl font-bold">{album.songTitle}</h2>
-            <p className="text-sm text-gray-700">{album.alt}</p>
+          {/* Show Overlay Details */}
+          {showOverlay && (
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+              {/* Album Details */}
+              <h2 className="text-xl sm:text-2xl font-bold">
+                {album.songTitle}
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-700">{album.alt}</p>
 
-            <div className="mt-4 max-h-[52vh] overflow-y-auto w-full px-4 mb-2">
-              <p className="text-sm italic whitespace-pre-line text-gray-700 mx-auto max-w-xs">
-                {album.lyrics}
-              </p>
+              <div className="mt-4 max-h-[52vh] overflow-y-auto w-full px-4 mb-2">
+                <p className="text-sm italic whitespace-pre-line text-gray-700 mx-auto max-w-xs">
+                  {album.lyrics}
+                </p>
+              </div>
+
+              {/* Music Links */}
+              <div
+                onClick={(e) => e.stopPropagation()}
+                onKeyDown={(e) => e.stopPropagation()}
+                className="flex flex-wrap gap-3 justify-center"
+              >
+                <ExternalLink
+                  href={album.spotifyUrl}
+                  className="text-sm sm:text-base"
+                >
+                  Spotify
+                </ExternalLink>
+                <ExternalLink
+                  href={album.appleMusicUrl}
+                  className="text-sm sm:text-base"
+                >
+                  Apple Music
+                </ExternalLink>
+                <ExternalLink
+                  href={album.bandcampUrl}
+                  className="text-sm sm:text-base"
+                >
+                  Bandcamp
+                </ExternalLink>
+                <ExternalLink
+                  href={album.youTubeUrl}
+                  className="text-sm sm:text-base"
+                >
+                  YouTube
+                </ExternalLink>
+              </div>
             </div>
-
-            {/* Music Links */}
-            <div
-              onClick={(e) => e.stopPropagation()}
-              onKeyDown={(e) => e.stopPropagation()}
-              className="flex flex-wrap gap-3"
-            >
-              <ExternalLink href={album.spotifyUrl}>Spotify</ExternalLink>
-              <ExternalLink href={album.appleMusicUrl}>
-                Apple Music
-              </ExternalLink>
-              <ExternalLink href={album.bandcampUrl}>Bandcamp</ExternalLink>
-              <ExternalLink href={album.youTubeUrl}>YouTube</ExternalLink>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </ToggleableOverlay>
 
       {!iframeLoaded && <Spinner />}

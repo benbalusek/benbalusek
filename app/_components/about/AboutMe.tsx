@@ -10,7 +10,7 @@ function AboutMe() {
   const [selectedImage, setSelectedImage] = useState<About | null>(null);
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto py-12">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto py-12">
       <div className="flex flex-col gap-6">
         {/* Photography Image */}
         <ClickableImage
@@ -22,8 +22,8 @@ function AboutMe() {
           onClick={() => setSelectedImage(selfies[0])}
         />
 
-        {/* Contact Form for small screens */}
-        <div className="lg:hidden">
+        {/* Contact Form for medium screens */}
+        <div className="hidden sm:block lg:hidden">
           <h3 className="text-xl font-semibold mb-4">Get in touch</h3>
           <ContactForm />
         </div>
@@ -53,7 +53,13 @@ function AboutMe() {
           onClick={() => setSelectedImage(selfies[2])}
         />
 
-        {/* Music Image for small screens */}
+        {/* Contact Form for small screens */}
+        <div className="sm:hidden">
+          <h3 className="text-xl font-semibold mb-4">Get in touch</h3>
+          <ContactForm />
+        </div>
+
+        {/* Music Image for medium screens */}
         <div className="lg:hidden">
           <ClickableImage
             src={selfies[1].smallSrc}

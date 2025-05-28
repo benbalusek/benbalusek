@@ -13,7 +13,7 @@ function ToggleableOverlay({
     <div
       role="button"
       tabIndex={0}
-      className={`w-full relative cursor-pointer group ${className}`}
+      className={`w-full relative cursor-pointer ${className}`}
       onClick={() => setShowOverlay((prev) => !prev)}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") setShowOverlay((prev) => !prev);

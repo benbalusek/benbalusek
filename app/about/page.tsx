@@ -20,15 +20,15 @@ export default function Page() {
           height={800}
           className="w-full object-cover"
           priority
-          unoptimized
+          quality={80}
         />
-        <div className="absolute inset-0 flex items-start justify-center pt-6">
+        <div className="absolute inset-0 flex items-start justify-center pt-3 sm:pt-4 md:pt-6 lg:pt-8 xl:pt-10">
           <h1 className="text-4xl lg:text-5xl font-bold text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
             About
           </h1>
         </div>
       </div>
-      <div className="py-6">
+      <div className="pb-6">
         <AboutMe />
       </div>
 

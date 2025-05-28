@@ -109,7 +109,7 @@ function ContactForm() {
           value={formData.message}
           required
           disabled={isLoading}
-          className="mt-1 block w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-200 disabled:bg-gray-100 disabled:cursor-not-allowed text-sm sm:text-base resize-y h-75 sm:h-45 md:h-30 lg:h-20 xl:h-15"
+          className="mt-1 block w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-200 disabled:bg-gray-100 disabled:cursor-not-allowed text-sm sm:text-base resize-y h-30 lg:h-20 xl:h-15"
         />
       </div>
 

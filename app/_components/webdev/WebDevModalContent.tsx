@@ -32,55 +32,56 @@ function WebDevModalContent({ website, onClose }: WebDevModalProps) {
       <ToggleableOverlay setShowOverlay={setShowOverlay}>
         {/* Show Overlay Hint and Image Carousel Arrows */}
         {!showOverlay && (
-          <>
-            <OverlayHint />
-            <ImageCarouselArrows onPrev={prevImage} onNext={nextImage} />
-          </>
+          <ImageCarouselArrows onPrev={prevImage} onNext={nextImage} />
         )}
 
-        {/* Modal Image */}
-        <ModalImage
-          src={imageList[currentIndex]}
-          alt={website.alt}
-          width={1600}
-          height={900}
-          showOverlay={showOverlay}
-        />
+        <div className="relative w-full h-full group">
+          {!showOverlay && <OverlayHint />}
 
-        {/* Show Overlay Details */}
-        {showOverlay && (
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-            {/* Website Details */}
-            <h2 className="text-xl xl:text-2xl font-bold mb-2">
-              {website.alt}
-            </h2>
-            <p className="text-sm xl:text-base text-gray-700 mb-8">
-              {website.tech}
-            </p>
+          {/* Modal Image */}
+          <ModalImage
+            src={imageList[currentIndex]}
+            alt={website.alt}
+            width={1600}
+            height={900}
+            showOverlay={showOverlay}
+          />
 
-            {/* Website Links */}
-            <div
-              onClick={(e) => e.stopPropagation()}
-              onKeyDown={(e) => e.stopPropagation()}
-              className="flex flex-wrap gap-3"
-            >
-              {website.websiteUrl && (
+          {/* Show Overlay Details */}
+          {showOverlay && (
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+              {/* Website Details */}
+              <h2 className="text-lg sm:text-xl xl:text-2xl font-bold mb-2">
+                {website.alt}
+              </h2>
+              <p className="text-sm xl:text-base text-gray-700 mb-8">
+                {website.tech}
+              </p>
+
+              {/* Website Links */}
+              <div
+                onClick={(e) => e.stopPropagation()}
+                onKeyDown={(e) => e.stopPropagation()}
+                className="flex flex-wrap gap-3"
+              >
+                {website.websiteUrl && (
+                  <ExternalLink
+                    href={website.websiteUrl}
+                    className="text-sm xl:text-base"
+                  >
+                    Live Site
+                  </ExternalLink>
+                )}
                 <ExternalLink
-                  href={website.websiteUrl}
+                  href={website.gitHubUrl}
                   className="text-sm xl:text-base"
                 >
-                  Live Site
+                  GitHub
                 </ExternalLink>
-              )}
-              <ExternalLink
-                href={website.gitHubUrl}
-                className="text-sm xl:text-base"
-              >
-                GitHub
-              </ExternalLink>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </ToggleableOverlay>
     </Modal>
   );

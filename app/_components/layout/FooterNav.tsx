@@ -14,7 +14,7 @@ type Props = {
 
 function FooterNav({ previous, next }: Props) {
   return (
-    <div className="flex justify-between items-center mt-16 mb-6 border-t pt-6 text-sm text-gray-600">
+    <div className="flex justify-between items-center mt-12 mb-6 border-t pt-6 text-sm text-gray-600">
       {/* Previous Page */}
       {previous ? (
         <Link href={previous.path} className="hover:underline">

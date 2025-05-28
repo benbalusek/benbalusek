@@ -7,7 +7,7 @@ function InvertibleVideo() {
 
   return (
     <div
-      className="w-[80px] h-[80px] xl:w-[95px] xl:h-[95px] 2xl:w-[150px] 2xl:h-[150px] overflow-hidden rounded-full cursor-pointer"
+      className="w-[75px] h-[75px] sm:w-[85px] sm:h-[85px] md:w-[95px] md:h-[95px] lg:w-[105px] lg:h-[105px] xl:w-[115px] xl:h-[115px] 2xl:w-[125px] 2xl:h-[125px] overflow-hidden rounded-full cursor-pointer"
       onClick={() => setIsInverted(!isInverted)}
     >
       <video
