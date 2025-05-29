@@ -17,8 +17,8 @@ function AboutMe() {
           src={selfies[0].smallSrc}
           alt={selfies[0].alt}
           ariaLabel={selfies[0].alt}
-          width={selfies[0].width}
-          height={selfies[0].height}
+          width={selfies[0].smallWidth}
+          height={selfies[0].smallHeight}
           onClick={() => setSelectedImage(selfies[0])}
         />
 
@@ -48,8 +48,8 @@ function AboutMe() {
           src={selfies[2].smallSrc}
           alt={selfies[2].alt}
           ariaLabel={selfies[2].alt}
-          width={selfies[2].width}
-          height={selfies[2].height}
+          width={selfies[2].smallWidth}
+          height={selfies[2].smallHeight}
           onClick={() => setSelectedImage(selfies[2])}
         />
 
@@ -65,8 +65,8 @@ function AboutMe() {
             src={selfies[1].smallSrc}
             alt={selfies[1].alt}
             ariaLabel={selfies[1].alt}
-            width={selfies[1].width}
-            height={selfies[1].height}
+            width={selfies[1].smallWidth}
+            height={selfies[1].smallHeight}
             onClick={() => setSelectedImage(selfies[1])}
           />
         </div>
@@ -78,8 +78,8 @@ function AboutMe() {
           src={selfies[1].smallSrc}
           alt={selfies[1].alt}
           ariaLabel={selfies[1].alt}
-          width={selfies[1].width}
-          height={selfies[1].height}
+          width={selfies[1].smallWidth}
+          height={selfies[1].smallHeight}
           onClick={() => setSelectedImage(selfies[1])}
         />
 

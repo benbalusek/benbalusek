@@ -16,8 +16,8 @@ export default function Page() {
         <Image
           src="/about/01-banner.jpg"
           alt="Pink hour in White Sands National Park, New Mexico"
-          width={2500}
-          height={800}
+          width={2400}
+          height={480}
           className="w-full object-cover"
           priority
           quality={80}

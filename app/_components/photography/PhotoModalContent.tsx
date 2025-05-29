@@ -32,8 +32,8 @@ function PhotoModalContent({ image, onClose }: PhotoModalProps) {
           <ModalImage
             src={image.mediumSrc}
             alt={`${image.title} in ${image.location}, ${image.state}`}
-            width={image.width}
-            height={image.height}
+            width={image.mediumWidth}
+            height={image.mediumHeight}
             className="w-full max-h-[85vh]"
             showOverlay={showOverlay}
           />

@@ -18,8 +18,8 @@ function PhotoGrid() {
             src={image.smallSrc}
             alt={`${image.title} in ${image.location}, ${image.state}`}
             ariaLabel={`${image.title} in ${image.location}, ${image.state}`}
-            width={image.width}
-            height={image.height}
+            width={image.smallWidth}
+            height={image.smallHeight}
             onClick={() => setSelectedImage(image)}
           />
         ))}

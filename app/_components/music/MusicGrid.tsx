@@ -18,8 +18,8 @@ function MusicGrid() {
             src={album.smallSrc}
             alt={album.alt}
             ariaLabel={album.alt}
-            width={1000}
-            height={1000}
+            width={600}
+            height={600}
             onClick={() => setSelectedAlbum(album)}
           />
         ))}

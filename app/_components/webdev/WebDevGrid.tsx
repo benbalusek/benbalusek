@@ -18,8 +18,8 @@ function WebDevGrid() {
             src={website.smallSrc}
             alt={website.alt}
             ariaLabel={website.alt}
-            width={1600}
-            height={900}
+            width={800}
+            height={450}
             onClick={() => setSelectedWebsite(website)}
           />
         ))}

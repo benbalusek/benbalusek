@@ -7,8 +7,10 @@ export type Photo = {
   state: string;
   camera: string;
   film: string;
-  width: number;
-  height: number;
+  smallWidth: number;
+  smallHeight: number;
+  mediumWidth: number;
+  mediumHeight: number;
 };
 
 export const images: Photo[] = [
@@ -21,8 +23,10 @@ export const images: Photo[] = [
     state: "California",
     camera: "Mamiya 645",
     film: "Kodak Gold 200",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 2,
@@ -33,8 +37,10 @@ export const images: Photo[] = [
     state: "New Mexico",
     camera: "Mamiya 645",
     film: "Kodak Ektar 100",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 3,
@@ -45,8 +51,10 @@ export const images: Photo[] = [
     state: "Wyoming",
     camera: "Canon AE-1",
     film: "Kodak Ektar 100",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 4,
@@ -57,8 +65,10 @@ export const images: Photo[] = [
     state: "Texas",
     camera: "Canon AE-1",
     film: "Kodak Portra 400",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 5,
@@ -69,8 +79,10 @@ export const images: Photo[] = [
     state: "California",
     camera: "Mamiya 645",
     film: "Kodak Tri-X 400",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 6,
@@ -81,8 +93,10 @@ export const images: Photo[] = [
     state: "Oregon",
     camera: "Canon AE-1",
     film: "Kodak Portra 400",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 7,
@@ -93,8 +107,10 @@ export const images: Photo[] = [
     state: "New Mexico",
     camera: "Mamiya 645",
     film: "Kodak Ektar 100",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 8,
@@ -105,8 +121,10 @@ export const images: Photo[] = [
     state: "Texas",
     camera: "Mamiya 645",
     film: "Kodak Portra 400",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 9,
@@ -117,8 +135,10 @@ export const images: Photo[] = [
     state: "California",
     camera: "Mamiya 645",
     film: "Kodak Portra 400",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 10,
@@ -129,8 +149,10 @@ export const images: Photo[] = [
     state: "New Mexico",
     camera: "Mamiya 645",
     film: "Kodak Gold 200",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 11,
@@ -141,8 +163,10 @@ export const images: Photo[] = [
     state: "California",
     camera: "Mamiya 645",
     film: "Kodak Gold 200",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 12,
@@ -153,8 +177,10 @@ export const images: Photo[] = [
     state: "Texas",
     camera: "Mamiya 645",
     film: "Kodak Portra 400",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 13,
@@ -165,8 +191,10 @@ export const images: Photo[] = [
     state: "Washington",
     camera: "Mamiya 645",
     film: "Kodak Portra 400",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 14,
@@ -177,8 +205,10 @@ export const images: Photo[] = [
     state: "Oregon",
     camera: "Canon AE-1",
     film: "Kodak Portra 400",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
   {
     id: 15,
@@ -189,8 +219,10 @@ export const images: Photo[] = [
     state: "California",
     camera: "Mamiya 645",
     film: "Kodak Portra 400",
-    width: 900,
-    height: 1200,
+    smallWidth: 600,
+    smallHeight: 800,
+    mediumWidth: 975,
+    mediumHeight: 1300,
   },
   {
     id: 16,
@@ -201,7 +233,9 @@ export const images: Photo[] = [
     state: "Washington",
     camera: "Canon AE-1",
     film: "Kodak Portra 400",
-    width: 1200,
-    height: 900,
+    smallWidth: 800,
+    smallHeight: 600,
+    mediumWidth: 1300,
+    mediumHeight: 975,
   },
 ];

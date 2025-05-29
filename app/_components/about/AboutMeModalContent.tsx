@@ -28,8 +28,8 @@ function AboutMeModalContent({ image, onClose }: AboutMeModalProps) {
         <Image
           src={imageList[currentIndex]}
           alt={image.alt}
-          width={image.width}
-          height={image.height}
+          width={image.mediumWidth}
+          height={image.mediumHeight}
           className="object-contain w-full max-h-[85vh] shadow cursor-pointer"
           quality={80}
           onClick={onClose}
