@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type ClickableImageProps = {
-  src: string;
+  src: StaticImageData;
   alt: string;
   width: number;
   height: number;
@@ -38,6 +38,7 @@ function ClickableImage({
         width={width}
         height={height}
         className="w-full object-cover hover:opacity-60 shadow"
+        placeholder="blur"
         quality={80}
       />
     </div>

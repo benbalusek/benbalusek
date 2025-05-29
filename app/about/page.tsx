@@ -1,5 +1,6 @@
 import AboutMe from "@/app/_components/about/AboutMe";
 import ExternalLink from "@/app/_components/ui/ExternalLink";
+import banner from "@/public/about/10-banner.jpg";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,11 +15,12 @@ export default function Page() {
     <div className="w-full">
       <div className="relative w-full">
         <Image
-          src="/about/01-banner.jpg"
+          src={banner}
           alt="Pink hour in White Sands National Park, New Mexico"
           width={2400}
           height={480}
           className="w-full object-cover"
+          placeholder="blur"
           priority
           quality={80}
         />

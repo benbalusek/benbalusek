@@ -16,6 +16,7 @@ function InvertibleVideo() {
         loop
         muted
         playsInline
+        preload="auto"
         aria-label="Purple flower in the Southwest"
         className={`w-full h-full object-cover transition duration-300 ${
           isInverted ? "filter invert" : ""

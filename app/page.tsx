@@ -1,4 +1,5 @@
 import InvertibleVideo from "@/app/_components/ui/InvertibleVideo";
+import background from "@/public/photos/17-large.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,8 +8,8 @@ function Page() {
   return (
     <div className="max-h-screen flex flex-col justify-center items-center text-center mt-9">
       <Image
-        src="/photos/17-large.jpg"
-        className="object-cover object-[left] z-[-1]"
+        src={background}
+        className="object-cover object-left z-[-1]"
         alt="Sunrise from Sunrise, Washington in Mount Rainier National Park"
         fill
         priority

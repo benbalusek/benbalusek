@@ -5,6 +5,7 @@ import Modal from "@/app/_components/ui/Modal";
 import ModalImage from "@/app/_components/ui/ModalImage";
 import OverlayHint from "@/app/_components/ui/OverlayHint";
 import ToggleableOverlay from "@/app/_components/ui/ToggleableOverlay";
+import { useModalDimensions } from "@/app/_hooks/useModalDimensions";
 import type { Photo } from "@/app/_lib/photoData";
 import Link from "next/link";
 import { useState } from "react";
@@ -17,6 +18,14 @@ type PhotoModalProps = {
 function PhotoModalContent({ image, onClose }: PhotoModalProps) {
   const [showOverlay, setShowOverlay] = useState(false);
 
+  // Calculate container dimensions for modal
+  const containerDimensions = useModalDimensions({
+    imageWidth: image.mediumWidth,
+    imageHeight: image.mediumHeight,
+  });
+
+  if (!containerDimensions) return null;
+
   return (
     <Modal
       onClose={onClose}
@@ -24,12 +33,21 @@ function PhotoModalContent({ image, onClose }: PhotoModalProps) {
       className="max-w-4xl"
     >
       <ToggleableOverlay setShowOverlay={setShowOverlay}>
-        <div className="relative w-full group">
+        <div
+          className="relative group"
+          style={{
+            width: containerDimensions.width,
+            height: containerDimensions.height,
+            maxWidth: "100%",
+            maxHeight: "85vh",
+          }}
+        >
           {/* Show Overlay Hint */}
           {!showOverlay && <OverlayHint />}
 
           {/* Modal Image */}
           <ModalImage
+            key={image.mediumSrc.src}
             src={image.mediumSrc}
             alt={`${image.title} in ${image.location}, ${image.state}`}
             width={image.mediumWidth}

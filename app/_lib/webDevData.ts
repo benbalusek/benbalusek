@@ -1,7 +1,31 @@
+import type { StaticImageData } from "next/image";
+
+import smallImg1 from "@/public/websites/01-small.jpg";
+import smallImg2 from "@/public/websites/05-small.jpg";
+import smallImg3 from "@/public/websites/09-small.jpg";
+import smallImg4 from "@/public/websites/13-small.jpg";
+
+import mediumImg1 from "@/public/websites/01-medium.jpg";
+import mediumImg2 from "@/public/websites/02-medium.jpg";
+import mediumImg3 from "@/public/websites/03-medium.jpg";
+import mediumImg4 from "@/public/websites/04-medium.jpg";
+import mediumImg5 from "@/public/websites/05-medium.jpg";
+import mediumImg6 from "@/public/websites/06-medium.jpg";
+import mediumImg7 from "@/public/websites/07-medium.jpg";
+import mediumImg8 from "@/public/websites/08-medium.jpg";
+import mediumImg9 from "@/public/websites/09-medium.jpg";
+import mediumImg10 from "@/public/websites/10-medium.jpg";
+import mediumImg11 from "@/public/websites/11-medium.jpg";
+import mediumImg12 from "@/public/websites/12-medium.jpg";
+import mediumImg13 from "@/public/websites/13-medium.jpg";
+import mediumImg14 from "@/public/websites/14-medium.jpg";
+import mediumImg15 from "@/public/websites/15-medium.jpg";
+import mediumImg16 from "@/public/websites/16-medium.jpg";
+
 export type WebDev = {
   id: number;
-  smallSrc: string;
-  mediumSrcs: string[];
+  smallSrc: StaticImageData;
+  mediumSrcs: StaticImageData[];
   alt: string;
   title: string;
   tech: string;
@@ -12,14 +36,8 @@ export type WebDev = {
 export const websites: WebDev[] = [
   {
     id: 1,
-    smallSrc: "/websites/101-small.jpg",
-    mediumSrcs: [
-      "/websites/101-medium.jpg",
-      "/websites/102-medium.jpg",
-      "/websites/103-medium.jpg",
-      "/websites/104-medium.jpg",
-      "/websites/105-medium.jpg",
-    ],
+    smallSrc: smallImg1,
+    mediumSrcs: [mediumImg1, mediumImg2, mediumImg3, mediumImg4],
     alt: "The Wild Oasis | Cabin Booking Customer Website",
     title: "The Wild Oasis Website",
     tech: "Next.js, React, Tailwind CSS, Supabase",
@@ -28,14 +46,8 @@ export const websites: WebDev[] = [
   },
   {
     id: 2,
-    smallSrc: "/websites/201-small.jpg",
-    mediumSrcs: [
-      "/websites/201-medium.jpg",
-      "/websites/202-medium.jpg",
-      "/websites/203-medium.jpg",
-      "/websites/204-medium.jpg",
-      "/websites/205-medium.jpg",
-    ],
+    smallSrc: smallImg2,
+    mediumSrcs: [mediumImg5, mediumImg6, mediumImg7, mediumImg8],
     alt: "The Wild Oasis | Cabin Booking Employee Website",
     title: "The Wild Oasis",
     tech: "React, React Router, Styled Components, Supabase",
@@ -44,14 +56,8 @@ export const websites: WebDev[] = [
   },
   {
     id: 3,
-    smallSrc: "/websites/301-small.jpg",
-    mediumSrcs: [
-      "/websites/301-medium.jpg",
-      "/websites/302-medium.jpg",
-      "/websites/303-medium.jpg",
-      "/websites/304-medium.jpg",
-      "/websites/305-medium.jpg",
-    ],
+    smallSrc: smallImg3,
+    mediumSrcs: [mediumImg9, mediumImg10, mediumImg11, mediumImg12],
     alt: "Analog Hub | Film Photography Social Media Website",
     title: "Analog Hub",
     tech: "Javascript, Node.js, Express, MongoDB, Mongoose, EJS",
@@ -60,14 +66,8 @@ export const websites: WebDev[] = [
   },
   {
     id: 4,
-    smallSrc: "/websites/401-small.jpg",
-    mediumSrcs: [
-      "/websites/401-medium.jpg",
-      "/websites/402-medium.jpg",
-      "/websites/403-medium.jpg",
-      "/websites/404-medium.jpg",
-      "/websites/405-medium.jpg",
-    ],
+    smallSrc: smallImg4,
+    mediumSrcs: [mediumImg13, mediumImg14, mediumImg15, mediumImg16],
     alt: "YelpCamp | Campground Booking Website",
     title: "YelpCamp",
     tech: "Javascript, Node.js, Express, MongoDB, Mongoose, EJS",

@@ -24,5 +24,5 @@ export function useImageCarousel<T>(imageList: T[], onClose: () => void) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [nextImage, prevImage, onClose]);
 
-  return { currentIndex, nextImage, prevImage };
+  return { setCurrentIndex, currentIndex, nextImage, prevImage };
 }

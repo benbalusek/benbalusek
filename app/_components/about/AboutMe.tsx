@@ -14,6 +14,7 @@ function AboutMe() {
       <div className="flex flex-col gap-6">
         {/* Photography Image */}
         <ClickableImage
+          key={selfies[0].id}
           src={selfies[0].smallSrc}
           alt={selfies[0].alt}
           ariaLabel={selfies[0].alt}
@@ -45,6 +46,7 @@ function AboutMe() {
 
         {/* Selfie Image */}
         <ClickableImage
+          key={selfies[2].id}
           src={selfies[2].smallSrc}
           alt={selfies[2].alt}
           ariaLabel={selfies[2].alt}
@@ -62,6 +64,7 @@ function AboutMe() {
         {/* Music Image for medium screens */}
         <div className="lg:hidden">
           <ClickableImage
+            key={selfies[1].id}
             src={selfies[1].smallSrc}
             alt={selfies[1].alt}
             ariaLabel={selfies[1].alt}
@@ -75,6 +78,7 @@ function AboutMe() {
       {/* Music Image for large screens */}
       <div className="hidden lg:flex flex-col gap-6">
         <ClickableImage
+          key={selfies[1].id}
           src={selfies[1].smallSrc}
           alt={selfies[1].alt}
           ariaLabel={selfies[1].alt}
