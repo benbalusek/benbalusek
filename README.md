@@ -1,7 +1,7 @@
 # Ben Balusek — Portfolio
 
 Welcome to my personal portfolio site!  
-This site showcases my work as a **photographer**, **musician**, and **web developer**.
+This site showcases my work as a **photographer**, **musician**, and **software developer**.
 
 You’ll find:
 
