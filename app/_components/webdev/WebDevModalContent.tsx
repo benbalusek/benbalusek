@@ -12,12 +12,23 @@ import {
   useModalDimensions,
 } from "@/app/_hooks/useModalDimensions";
 import type { WebDev } from "@/app/_lib/webDevData";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 type WebDevModalProps = {
   website: WebDev;
   onClose: () => void;
 };
+
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < breakpoint);
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [breakpoint]);
+  return isMobile;
+}
 
 function WebDevModalContent({ website, onClose }: WebDevModalProps) {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -25,26 +36,52 @@ function WebDevModalContent({ website, onClose }: WebDevModalProps) {
   const { setCurrentIndex, currentIndex, nextImage, prevImage } =
     useImageCarousel(imageList, onClose);
 
+  const isMobile = useIsMobile();
+  const isOdd = imageList.length % 2 === 1;
+
   // Prevent last image on carousel from being alone on mobile
   const handleNextImage = useCallback(() => {
-    const maxPairIndex = Math.floor(imageList.length / 2) * 2 - 2;
-    if (currentIndex >= maxPairIndex) {
-      // Reset to beginning instead of showing last single image
-      setCurrentIndex(0);
-    } else {
-      nextImage();
+    // Apply the “avoid lonely last image” rule only on mobile with odd count
+    if (isMobile && isOdd) {
+      const maxPairIndex = imageList.length - 2; // last full pair start
+      if (currentIndex >= maxPairIndex) {
+        setCurrentIndex(0);
+        return;
+      }
     }
-  }, [setCurrentIndex, currentIndex, imageList.length, nextImage]);
+    // Normal advance (works for 2 images too)
+    if (currentIndex >= imageList.length - 1) setCurrentIndex(0);
+    else nextImage();
+  }, [
+    isMobile,
+    isOdd,
+    currentIndex,
+    imageList.length,
+    nextImage,
+    setCurrentIndex,
+  ]);
 
   const handlePrevImage = useCallback(() => {
-    const maxPairIndex = Math.floor(imageList.length / 2) * 2 - 2;
-    if (currentIndex === 0) {
-      // Go to last pair instead of last single image
-      setCurrentIndex(maxPairIndex);
-    } else {
+    if (isMobile && isOdd) {
+      const maxPairIndex = imageList.length - 2;
+      if (currentIndex === 0) {
+        setCurrentIndex(maxPairIndex); // last full pair
+        return;
+      }
       prevImage();
+      return;
     }
-  }, [setCurrentIndex, currentIndex, imageList.length, prevImage]);
+    // Normal prev
+    if (currentIndex === 0) setCurrentIndex(imageList.length - 1);
+    else prevImage();
+  }, [
+    isMobile,
+    isOdd,
+    currentIndex,
+    imageList.length,
+    prevImage,
+    setCurrentIndex,
+  ]);
 
   // Calculate container dimensions for modal
   const containerDimensions = useModalDimensions({
@@ -69,12 +106,14 @@ function WebDevModalContent({ website, onClose }: WebDevModalProps) {
     >
       <ToggleableOverlay setShowOverlay={setShowOverlay}>
         {/* Show Overlay Hint and Image Carousel Arrows */}
-        {!showOverlay && (
-          <ImageCarouselArrows
-            onPrev={handlePrevImage}
-            onNext={handleNextImage}
-          />
-        )}
+        <div className="hidden md:block">
+          {!showOverlay && (
+            <ImageCarouselArrows
+              onPrev={handlePrevImage}
+              onNext={handleNextImage}
+            />
+          )}
+        </div>
 
         {/* Desktop: One image */}
         <div

@@ -1,9 +1,10 @@
 import type { StaticImageData } from "next/image";
 
 import smallImg1 from "@/public/websites/01-small.jpg";
-import smallImg2 from "@/public/websites/05-small.jpg";
-import smallImg3 from "@/public/websites/09-small.jpg";
-import smallImg4 from "@/public/websites/13-small.jpg";
+import smallImg2 from "@/public/websites/04-small.jpg";
+import smallImg3 from "@/public/websites/07-small.jpg";
+import smallImg4 from "@/public/websites/10-small.jpg";
+import smallImg5 from "@/public/websites/13-small.jpg";
 
 import mediumImg1 from "@/public/websites/01-medium.jpg";
 import mediumImg2 from "@/public/websites/02-medium.jpg";
@@ -19,8 +20,6 @@ import mediumImg11 from "@/public/websites/11-medium.jpg";
 import mediumImg12 from "@/public/websites/12-medium.jpg";
 import mediumImg13 from "@/public/websites/13-medium.jpg";
 import mediumImg14 from "@/public/websites/14-medium.jpg";
-import mediumImg15 from "@/public/websites/15-medium.jpg";
-import mediumImg16 from "@/public/websites/16-medium.jpg";
 
 export type WebDev = {
   id: number;
@@ -37,27 +36,17 @@ export const websites: WebDev[] = [
   {
     id: 1,
     smallSrc: smallImg1,
-    mediumSrcs: [mediumImg1, mediumImg2, mediumImg3, mediumImg4],
-    alt: "The Wild Oasis | Cabin Booking Customer Website",
-    title: "The Wild Oasis Website",
-    tech: "Next.js, React, Tailwind CSS, Supabase",
-    websiteUrl: "https://the-wild-oasis-website-rho-sand.vercel.app/",
-    gitHubUrl: "https://github.com/benbalusek/the-wild-oasis-website",
+    mediumSrcs: [mediumImg1, mediumImg2, mediumImg3],
+    alt: "YelpCamp | Campground Booking Website",
+    title: "YelpCamp",
+    tech: "Javascript, Node.js, Express, MongoDB, Mongoose, EJS",
+    websiteUrl: "",
+    gitHubUrl: "https://github.com/benbalusek/yelpcamp",
   },
   {
     id: 2,
     smallSrc: smallImg2,
-    mediumSrcs: [mediumImg5, mediumImg6, mediumImg7, mediumImg8],
-    alt: "The Wild Oasis | Cabin Booking Employee Website",
-    title: "The Wild Oasis",
-    tech: "React, React Router, Styled Components, Supabase",
-    websiteUrl: "https://the-wild-oasis9.netlify.app/dashboard",
-    gitHubUrl: "https://github.com/benbalusek/the-wild-oasis",
-  },
-  {
-    id: 3,
-    smallSrc: smallImg3,
-    mediumSrcs: [mediumImg9, mediumImg10, mediumImg11, mediumImg12],
+    mediumSrcs: [mediumImg4, mediumImg5, mediumImg6],
     alt: "Analog Hub | Film Photography Social Media Website",
     title: "Analog Hub",
     tech: "Javascript, Node.js, Express, MongoDB, Mongoose, EJS",
@@ -65,13 +54,33 @@ export const websites: WebDev[] = [
     gitHubUrl: "https://github.com/benbalusek/analog-hub",
   },
   {
+    id: 3,
+    smallSrc: smallImg3,
+    mediumSrcs: [mediumImg7, mediumImg8, mediumImg9],
+    alt: "The Wild Oasis | Cabin Booking Employee Website",
+    title: "The Wild Oasis",
+    tech: "React, React Router, Styled Components, Supabase",
+    websiteUrl: "https://the-wild-oasis9.netlify.app/dashboard",
+    gitHubUrl: "https://github.com/benbalusek/the-wild-oasis",
+  },
+  {
     id: 4,
     smallSrc: smallImg4,
-    mediumSrcs: [mediumImg13, mediumImg14, mediumImg15, mediumImg16],
-    alt: "YelpCamp | Campground Booking Website",
-    title: "YelpCamp",
-    tech: "Javascript, Node.js, Express, MongoDB, Mongoose, EJS",
-    websiteUrl: "",
-    gitHubUrl: "https://github.com/benbalusek/yelpcamp",
+    mediumSrcs: [mediumImg10, mediumImg11, mediumImg12],
+    alt: "The Wild Oasis | Cabin Booking Customer Website",
+    title: "The Wild Oasis Website",
+    tech: "Next.js, React, Tailwind CSS, Supabase",
+    websiteUrl: "https://the-wild-oasis-website-rho-sand.vercel.app/",
+    gitHubUrl: "https://github.com/benbalusek/the-wild-oasis-website",
+  },
+  {
+    id: 5,
+    smallSrc: smallImg5,
+    mediumSrcs: [mediumImg13, mediumImg14],
+    alt: "Simple Astrology App",
+    title: "Simple Astrology",
+    tech: "Next.js, React, Tailwind CSS",
+    websiteUrl: "https://simple-astrology.vercel.app/",
+    gitHubUrl: "https://github.com/benbalusek/simple-astrology",
   },
 ];
