@@ -4,15 +4,11 @@ import smallImg1 from "@/public/music/01-small.jpg";
 import smallImg2 from "@/public/music/02-small.jpg";
 import smallImg3 from "@/public/music/03-small.jpg";
 import smallImg4 from "@/public/music/04-small.jpg";
-import smallImg5 from "@/public/music/05-small.jpg";
-import smallImg6 from "@/public/music/06-small.jpg";
 
 import mediumImg1 from "@/public/music/01-medium.jpg";
 import mediumImg2 from "@/public/music/02-medium.jpg";
 import mediumImg3 from "@/public/music/03-medium.jpg";
 import mediumImg4 from "@/public/music/04-medium.jpg";
-import mediumImg5 from "@/public/music/05-medium.jpg";
-import mediumImg6 from "@/public/music/06-medium.jpg";
 
 export type Music = {
   id: number;
@@ -33,101 +29,6 @@ export const albums: Music[] = [
     id: 1,
     smallSrc: smallImg1,
     mediumSrc: mediumImg1,
-    alt: "Sun and Moon and Silhouettes by Kali Yuga",
-    songTitle: "Sun and Moon",
-    lyrics: `Where are you now?
-    The past is inside of us
-    How do I love?
-    What’s holding me down?
-    What’s lost is what’s yet to be found
-    And I know
-    Your face in my dreams
-    The world is alive, everything inside us
-    All form entropy
-    Your words, they sing
-
-    Light, take me home
-    See the moon, feeling your soul
-    Love, all is love
-    Sun and moon, know they are one
-
-    Who are we now?
-    The earth holds the truth in the ground
-    I want to tear it all down
-    The heavens they speak for themselves
-    And I know
-    What they look like
-    Turn off your phone, go outside
-    And drive out past city lights
-    Your world, it shines
-
-    Light, take me home
-    See the moon, feeling your soul
-    Love, all is love
-    Sun and moon, know they are one`,
-    songUrl: "https://open.spotify.com/embed/track/51QyP2wiN59iQ8XLmS4h9Y",
-    spotifyUrl: "https://open.spotify.com/album/5aDSZl3OuQuX7IQ52ltUpx",
-    appleMusicUrl:
-      "https://music.apple.com/us/album/sun-and-moon-and-silhouettes-single/1748810460",
-    bandcampUrl:
-      "https://kaliyugatx.bandcamp.com/album/sun-and-moon-and-silhouettes",
-    youTubeUrl: "https://www.youtube.com/watch?v=HGHQ91F-gxU",
-  },
-  {
-    id: 2,
-    smallSrc: smallImg2,
-    mediumSrc: mediumImg2,
-    alt: "I to Eye by Ben Balusek",
-    songTitle: "Here in my World",
-    lyrics: `Walking in this place
-    I can see patterns in the space
-    Pictures are singing their embrace
-    I can be happy
-
-    If when looking at a tree
-    I can see it is just a tree
-    A living, perceiving entity
-    We are this place
-
-    Here in my world
-    I can hear the birds
-    I read your pain online
-    I feel your pain
-
-    Talking in your sleep
-    I respond, Taylor, you hear me
-    Are you still inside your dream
-    Are you happy
-
-    Waking up at dawn
-    I can see the sun is being born
-    Clouds above are making love
-    Was I dreaming
-
-    Our car is freezing cold
-    On the side of this old road
-    My bladder might explode
-    We are living
-
-    Here in my world
-    I can hear the birds
-    I saw your pain online
-    I feel your pain
-
-    Here in my world
-    I drive through deserts
-    You are the thing you need
-    You are me`,
-    songUrl: "https://open.spotify.com/embed/track/1YfCcuHSIa1tZES6RiDvbE",
-    spotifyUrl: "https://open.spotify.com/album/37LEqtDHssistvvpWhp383",
-    appleMusicUrl: "https://music.apple.com/us/album/i-to-eye/1748716700",
-    bandcampUrl: "https://benbalusek.bandcamp.com/album/i-to-eye",
-    youTubeUrl: "https://www.youtube.com/watch?v=93LHq_egNFw",
-  },
-  {
-    id: 3,
-    smallSrc: smallImg3,
-    mediumSrc: mediumImg3,
     alt: "Addicted by Medvedi",
     songTitle: "Addicted",
     lyrics: `Doors open
@@ -194,9 +95,9 @@ export const albums: Music[] = [
     youTubeUrl: "https://youtu.be/mqaY1toX7ZM?si=rIOTPEIvZRv0Bnkw",
   },
   {
-    id: 4,
-    smallSrc: smallImg4,
-    mediumSrc: mediumImg4,
+    id: 2,
+    smallSrc: smallImg2,
+    mediumSrc: mediumImg2,
     alt: "New World by Medvedi",
     songTitle: "New World",
     lyrics: `These days
@@ -237,9 +138,9 @@ export const albums: Music[] = [
   },
 
   {
-    id: 5,
-    smallSrc: smallImg5,
-    mediumSrc: mediumImg5,
+    id: 3,
+    smallSrc: smallImg3,
+    mediumSrc: mediumImg3,
     alt: "Unwind by Medvedi",
     songTitle: "Information Age",
     lyrics: `Streetlights, where are you?
@@ -292,9 +193,9 @@ export const albums: Music[] = [
     youTubeUrl: "https://www.youtube.com/watch?v=JWNAiDOyiZg",
   },
   {
-    id: 6,
-    smallSrc: smallImg6,
-    mediumSrc: mediumImg6,
+    id: 4,
+    smallSrc: smallImg4,
+    mediumSrc: mediumImg4,
     alt: "Dreams by Medvedi",
     songTitle: "Holiday",
     lyrics: `Holiday
