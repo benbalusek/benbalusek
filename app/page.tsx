@@ -1,5 +1,5 @@
 import InvertibleVideo from "@/app/_components/ui/InvertibleVideo";
-import background from "@/public/photos/17-large.jpg";
+import background from "@/public/photos/17-photo-lg.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,7 +23,7 @@ function Page() {
         </h1>
 
         <p className="text-sm sm:text-base 2xl:text-lg text-neutral-700 font-light leading-tight drop-shadow-md">
-          a photographer, musician, and web developer
+          a photographer, musician, and software developer
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">

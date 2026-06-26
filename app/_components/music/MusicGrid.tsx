@@ -12,17 +12,20 @@ function MusicGrid() {
     <div className="mx-auto w-full">
       {/* Music Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
-        {albums.map((album) => (
-          <ClickableImage
-            key={album.id}
-            src={album.smallSrc}
-            alt={album.alt}
-            ariaLabel={album.alt}
-            width={600}
-            height={600}
-            onClick={() => setSelectedAlbum(album)}
-          />
-        ))}
+        {albums
+          .slice()
+          .reverse()
+          .map((album) => (
+            <ClickableImage
+              key={album.id}
+              src={album.smallSrc}
+              alt={album.alt}
+              ariaLabel={album.alt}
+              width={600}
+              height={600}
+              onClick={() => setSelectedAlbum(album)}
+            />
+          ))}
       </div>
 
       {/* Music Modal Content */}

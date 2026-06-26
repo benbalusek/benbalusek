@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Ben Balusek",
     default: "Portfolio | Ben Balusek ",
   },
-  description: "Portfolio of photography, music, and web development",
+  description: "Portfolio of photography, music, and software development",
 };
 
 export default function RootLayout({

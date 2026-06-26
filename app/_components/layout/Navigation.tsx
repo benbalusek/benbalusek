@@ -47,7 +47,7 @@ function Navigation() {
           <Link href="/music">Music</Link>
         </li>
         <li>
-          <Link href="/webdev">Web Dev</Link>
+          <Link href="/software">Software</Link>
         </li>
         <li>
           <Link href="/about">About</Link>
@@ -86,8 +86,8 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/webdev" onClick={() => setIsOpen(false)}>
-              Web Dev
+            <Link href="/software" onClick={() => setIsOpen(false)}>
+              Software
             </Link>
           </li>
           <li>

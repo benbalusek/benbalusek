@@ -1,6 +1,6 @@
 import AboutMe from "@/app/_components/about/AboutMe";
 import ExternalLink from "@/app/_components/ui/ExternalLink";
-import banner from "@/public/about/10-banner.jpg";
+import banner from "@/public/about/10-about-banner.jpg";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,7 +36,7 @@ export default function Page() {
 
       {/* About Footer */}
       <div className="flex flex-wrap gap-3 items-center justify-center mb-6">
-        <ExternalLink href="https://www.instagram.com/sunandsilhouettes/">
+        <ExternalLink href="https://www.instagram.com/benbalusek/">
           Instagram
         </ExternalLink>
         <ExternalLink href="https://open.spotify.com/artist/6LsIdsrIxqN3CDONwL9cVQ">

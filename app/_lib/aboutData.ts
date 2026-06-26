@@ -1,18 +1,18 @@
 import type { StaticImageData } from "next/image";
 
-import smallImg1 from "@/public/about/01-small.jpg";
-import smallImg2 from "@/public/about/04-small.jpg";
-import smallImg3 from "@/public/about/07-small.jpg";
+import smallImg1 from "@/public/about/01-about-sm.jpg";
+import smallImg2 from "@/public/about/04-about-sm.jpg";
+import smallImg3 from "@/public/about/07-about-sm.jpg";
 
-import mediumImg1 from "@/public/about/01-medium.jpg";
-import mediumImg2 from "@/public/about/02-medium.jpg";
-import mediumImg3 from "@/public/about/03-medium.jpg";
-import mediumImg4 from "@/public/about/04-medium.jpg";
-import mediumImg5 from "@/public/about/05-medium.jpg";
-import mediumImg6 from "@/public/about/06-medium.jpg";
-import mediumImg7 from "@/public/about/07-medium.jpg";
-import mediumImg8 from "@/public/about/08-medium.jpg";
-import mediumImg9 from "@/public/about/09-medium.jpg";
+import mediumImg1 from "@/public/about/01-about-md.jpg";
+import mediumImg2 from "@/public/about/02-about-md.jpg";
+import mediumImg3 from "@/public/about/03-about-md.jpg";
+import mediumImg4 from "@/public/about/04-about-md.jpg";
+import mediumImg5 from "@/public/about/05-about-md.jpg";
+import mediumImg6 from "@/public/about/06-about-md.jpg";
+import mediumImg7 from "@/public/about/07-about-md.jpg";
+import mediumImg8 from "@/public/about/08-about-md.jpg";
+import mediumImg9 from "@/public/about/09-about-md.jpg";
 
 export type About = {
   id: number;

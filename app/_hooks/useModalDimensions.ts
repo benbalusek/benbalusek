@@ -38,7 +38,7 @@ export function useModalDimensions({
       const maxModalContentWidth = maxModalWidth - modalPadding * 2;
       const availableWidth = Math.min(
         maxModalContentWidth,
-        vw - modalPadding * 2
+        vw - modalPadding * 2,
       );
 
       const availableHeight = vh * maxHeight;
@@ -70,7 +70,7 @@ export function useModalDimensions({
   return containerDimensions;
 }
 
-// Mobile Modal Dimensions for Web Dev Modal
+// Mobile Modal Dimensions for Software Modal
 export function useMobileModalDimensions({
   imageWidth,
   imageHeight,

@@ -15,7 +15,7 @@ function Page() {
 
       <FooterNav
         previous={{ label: "Photography", path: "/photography" }}
-        next={{ label: "Web Dev", path: "/webdev" }}
+        next={{ label: "Software", path: "/software" }}
       />
     </div>
   );

@@ -33,14 +33,22 @@ function AboutMe() {
       <div className="flex flex-col gap-6">
         {/* Bio */}
         <div className="text-lg leading-relaxed">
-          <h2 className="text-2xl font-semibold mb-4">Hi, I’m Ben Balusek</h2>
+          <h2 className="text-2xl font-semibold mb-4">Hi, I’m Ben</h2>
           <p>
-            I&apos;m a photographer, musician, and web developer from El Paso
-            and San Marcos, Texas. I love spending time outdoors — hiking,
-            traveling, cold plunging, deep breathing, and shooting film. Whether
-            through photos, music, or websites, I try to create from a place of
-            intuition. My work is inspired by nature, human connection,
-            minimalism, and long road trips.
+            A photographer, musician, and software developer from Texas. I shoot
+            35mm and 120 film in wild places, write songs that come from a place
+            of intuition, and develop apps that connect people and solve
+            problems.
+          </p>
+          <br />
+          <p>
+            I grew up playing drums and guitar and started writing and recording
+            music under the name Medvedi in 2012 with my girlfriend, who later
+            became my wife. A year later, we bought an old camera and began
+            documenting our hikes, camping trips, and travels on film. In 2022,
+            I taught myself web development with JavaScript and now work with a
+            team developing React Native apps. My work is inspired by nature,
+            connection, and minimalism.
           </p>
         </div>
 

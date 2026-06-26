@@ -76,7 +76,7 @@ function PhotoModalContent({ image, onClose }: PhotoModalProps) {
                 onKeyDown={(e) => e.stopPropagation()}
               >
                 <ExternalLink
-                  href="https://www.instagram.com/sunandsilhouettes/"
+                  href="https://www.instagram.com/benbalusek/"
                   className="inline-block text-sm xl:text-base mb-1.5"
                 >
                   Instagram
