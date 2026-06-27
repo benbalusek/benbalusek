@@ -1,5 +1,6 @@
 import FooterNav from "@/app/_components/layout/FooterNav";
 import SoftwareGrid from "@/app/_components/software/SoftwareGrid";
+import ExternalLink from "@/app/_components/ui/ExternalLink";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,6 +15,12 @@ function Page() {
         Software
       </h1>
       <SoftwareGrid />
+
+      <div className="mt-10 text-center">
+        <ExternalLink href="https://github.com/benbalusek">
+          View more on GitHub →
+        </ExternalLink>
+      </div>
 
       <FooterNav
         previous={{ label: "Music", path: "/music" }}

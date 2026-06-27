@@ -1,5 +1,6 @@
 import FooterNav from "@/app/_components/layout/FooterNav";
 import PhotoGrid from "@/app/_components/photography/PhotoGrid";
+import ExternalLink from "@/app/_components/ui/ExternalLink";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,6 +15,12 @@ function Page() {
         Photography
       </h1>
       <PhotoGrid />
+
+      <div className="mt-10 text-center">
+        <ExternalLink href="https://instagram.com/benbalusek">
+          Follow on Instagram →
+        </ExternalLink>
+      </div>
 
       <FooterNav
         previous={{ label: "Home", path: "/" }}

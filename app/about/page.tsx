@@ -36,16 +36,30 @@ export default function Page() {
 
       {/* About Footer */}
       <div className="flex flex-wrap gap-3 items-center justify-center mb-6">
-        <ExternalLink href="https://www.instagram.com/benbalusek/">
+        <ExternalLink
+          href="https://www.instagram.com/benbalusek/"
+          className="text-blue-600 underline"
+        >
           Instagram
         </ExternalLink>
-        <ExternalLink href="https://open.spotify.com/artist/6LsIdsrIxqN3CDONwL9cVQ">
+        <ExternalLink
+          href="https://open.spotify.com/artist/6LsIdsrIxqN3CDONwL9cVQ"
+          className="text-blue-600 underline"
+        >
           Spotify
         </ExternalLink>
-        <ExternalLink href="https://music.apple.com/us/artist/medvedi/1271007412">
+        <ExternalLink
+          href="https://music.apple.com/us/artist/medvedi/1271007412"
+          className="text-blue-600 underline"
+        >
           Apple Music
         </ExternalLink>
-        <ExternalLink href="https://github.com/benbalusek">GitHub</ExternalLink>
+        <ExternalLink
+          href="https://github.com/benbalusek"
+          className="text-blue-600 underline"
+        >
+          GitHub
+        </ExternalLink>
 
         <span> / </span>
         <Link

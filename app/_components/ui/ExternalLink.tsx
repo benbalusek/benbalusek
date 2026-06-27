@@ -12,7 +12,7 @@ function ExternalLink({ href, children, className = "" }: ExternalLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`text-blue-600 underline ${className}`}
+      className={className}
     >
       {children}
     </Link>
