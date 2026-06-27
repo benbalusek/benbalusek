@@ -83,7 +83,7 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
                   {album.spotifyUrl && (
                     <ExternalLink
                       href={album.spotifyUrl}
-                      className="text-blue-600 underline"
+                      className="text-blue-600 underline text-sm sm:text-base"
                     >
                       Spotify
                     </ExternalLink>
@@ -92,7 +92,7 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
                   {album.appleMusicUrl && (
                     <ExternalLink
                       href={album.appleMusicUrl}
-                      className="text-blue-600 underline"
+                      className="text-blue-600 underline text-sm sm:text-base"
                     >
                       Apple Music
                     </ExternalLink>
@@ -101,7 +101,7 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
                   {album.bandcampUrl && (
                     <ExternalLink
                       href={album.bandcampUrl}
-                      className="text-blue-600 underline"
+                      className="text-blue-600 underline text-sm sm:text-base"
                     >
                       Bandcamp
                     </ExternalLink>
@@ -110,7 +110,7 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
                   {album.youTubeUrl && (
                     <ExternalLink
                       href={album.youTubeUrl}
-                      className="text-blue-600 underline"
+                      className="text-blue-600 underline text-sm sm:text-base"
                     >
                       YouTube
                     </ExternalLink>
