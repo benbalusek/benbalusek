@@ -80,53 +80,66 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
                   onKeyDown={(e) => e.stopPropagation()}
                   className="flex flex-wrap gap-3 justify-center"
                 >
-                  <ExternalLink
-                    href={album.spotifyUrl}
-                    className="text-sm sm:text-base"
-                  >
-                    Spotify
-                  </ExternalLink>
-                  <ExternalLink
-                    href={album.appleMusicUrl}
-                    className="text-sm sm:text-base"
-                  >
-                    Apple Music
-                  </ExternalLink>
-                  <ExternalLink
-                    href={album.bandcampUrl}
-                    className="text-sm sm:text-base"
-                  >
-                    Bandcamp
-                  </ExternalLink>
-                  <ExternalLink
-                    href={album.youTubeUrl}
-                    className="text-sm sm:text-base"
-                  >
-                    YouTube
-                  </ExternalLink>
+                  {album.spotifyUrl && (
+                    <ExternalLink
+                      href={album.spotifyUrl}
+                      className="text-sm sm:text-base"
+                    >
+                      Spotify
+                    </ExternalLink>
+                  )}
+
+                  {album.appleMusicUrl && (
+                    <ExternalLink
+                      href={album.appleMusicUrl}
+                      className="text-sm sm:text-base"
+                    >
+                      Apple Music
+                    </ExternalLink>
+                  )}
+
+                  {album.bandcampUrl && (
+                    <ExternalLink
+                      href={album.bandcampUrl}
+                      className="text-sm sm:text-base"
+                    >
+                      Bandcamp
+                    </ExternalLink>
+                  )}
+
+                  {album.youTubeUrl && (
+                    <ExternalLink
+                      href={album.youTubeUrl}
+                      className="text-sm sm:text-base"
+                    >
+                      YouTube
+                    </ExternalLink>
+                  )}
                 </div>
               </div>
             )}
           </div>
         </ToggleableOverlay>
 
-        {!iframeLoaded && <Spinner />}
+        {album.songUrl && !iframeLoaded && <Spinner />}
 
         {/* Spotify Music Player */}
-        <div className="w-full">
-          <iframe
-            title={`${album.songTitle} music player`}
-            tabIndex={0}
-            className={`rounded-xl w-full transition-opacity duration-300 ${
-              iframeLoaded ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
-            }`}
-            src={album.songUrl}
-            onLoad={() => setIframeLoaded(true)}
-            height="80"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          />
-        </div>
+        {album.songUrl && (
+          <div className="w-full">
+            <iframe
+              title={`${album.songTitle} music player`}
+              tabIndex={0}
+              className={`rounded-xl w-full transition-opacity duration-300 ${
+                iframeLoaded ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
+              }`}
+              src={album.songUrl}
+              onLoad={() => setIframeLoaded(true)}
+              height="80"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
+          </div>
+        )}
 
         <button
           tabIndex={0}

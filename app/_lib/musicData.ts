@@ -9,6 +9,8 @@ import smallImg6 from "@/public/music/06-album-sm.jpg";
 import smallImg7 from "@/public/music/07-album-sm.jpg";
 import smallImg8 from "@/public/music/08-album-sm.jpg";
 import smallImg9 from "@/public/music/09-album-sm.jpg";
+import smallImg10 from "@/public/music/10-album-sm.jpg";
+import smallImg11 from "@/public/music/11-album-sm.jpg";
 
 import mediumImg1 from "@/public/music/01-album-md.jpg";
 import mediumImg2 from "@/public/music/02-album-md.jpg";
@@ -19,6 +21,8 @@ import mediumImg6 from "@/public/music/06-album-md.jpg";
 import mediumImg7 from "@/public/music/07-album-md.jpg";
 import mediumImg8 from "@/public/music/08-album-md.jpg";
 import mediumImg9 from "@/public/music/09-album-md.jpg";
+import mediumImg10 from "@/public/music/10-album-md.jpg";
+import mediumImg11 from "@/public/music/11-album-md.jpg";
 
 export type Music = {
   id: number;
@@ -167,12 +171,11 @@ export const albums: Music[] = [
     Just try your best not to forget
     Just try your best not to forget
     Just try your best not to forget me`,
-    songUrl: "https://open.spotify.com/embed/track/5q01xVhTzHRZ2kS5NUsR5g",
-    spotifyUrl: "https://open.spotify.com/album/4B6QkG5153SP6jITOuD3Bu",
-    appleMusicUrl:
-      "https://music.apple.com/us/album/medvedi-bug-split/1537279079",
-    bandcampUrl: "https://medvedi.bandcamp.com/album/medvedi-bug-split",
-    youTubeUrl: "https://youtu.be/8CbTYmOYq_0?si=uVT3oU-fwR6V6O9T",
+    songUrl: "",
+    spotifyUrl: "",
+    appleMusicUrl: "",
+    bandcampUrl: "https://medvedi.bandcamp.com/album/bug",
+    youTubeUrl: "",
   },
   {
     id: 5,
@@ -408,5 +411,112 @@ export const albums: Music[] = [
       "https://music.apple.com/us/album/death-and-rebirth/1533671864",
     bandcampUrl: "https://medvedi.bandcamp.com/album/death-and-rebirth",
     youTubeUrl: "https://youtu.be/mqaY1toX7ZM?si=rIOTPEIvZRv0Bnkw",
+  },
+  {
+    id: 10,
+    smallSrc: smallImg10,
+    mediumSrc: mediumImg10,
+    alt: "Here In My World by Medvedi",
+    songTitle: "Here In My World",
+    lyrics: `Walking in this place
+    I can see patterns in the space
+    Pictures are singing their embrace
+    I can be happy
+
+    If when looking at a tree
+    I can see it is just a tree
+    A living, perceiving entity
+    We are this place
+
+    Here in my world
+    I can hear the birds
+    I read your pain online
+    I feel your pain
+
+    Talking in your sleep
+    I respond, Taylor, you hear me
+    Are you still inside your dream
+    Are you happy
+
+    Waking up at dawn
+    I can see the sun is being born
+    Clouds above are making love
+    Was I dreaming
+
+    Our car is freezing cold
+    On the side of this old road
+    My bladder might explode
+    We are living
+
+    Here in my world
+    I can hear the birds
+    I saw your pain online
+    I feel your pain
+
+    Here in my world
+    I drive through deserts
+    You are the thing you need
+    You are me`,
+    songUrl: "",
+    spotifyUrl: "",
+    appleMusicUrl: "",
+    bandcampUrl: "https://medvedi.bandcamp.com/album/i-to-eye",
+    youTubeUrl: "",
+  },
+  {
+    id: 11,
+    smallSrc: smallImg11,
+    mediumSrc: mediumImg11,
+    alt: "Silhouettes by Medvedi",
+    songTitle: "Silhouettes",
+    lyrics: `Breathing your sweet air
+    Birds swimming in the wind
+    In time, all is felt
+    Bury your sword and call it vein
+    To fight for gain
+    In pain, we are one
+    Relive the steady flow
+    You’re in my room then I’m on the road
+
+    Silhouettes
+    Paint the world below
+    With every single step
+    With every single breath
+    We feel, perceive
+
+    Fetching the dog in me
+    Your inner grace is felt as balls are chased
+    Being a beast, I roam
+    These barren peaks my feet call home
+
+    Silhouettes
+    Paint the world below
+    With every single step
+    With every single breath
+    We feel, perceive
+
+    Sitting on my floor
+    Though words adore, we savor more
+    Laughing, your soul in me
+    That inner peace buried beneath
+
+    Silhouettes
+    Against my window
+    The sound as the wind pulls
+    The leaves on the tree
+    Outside my bedroom
+    What abundance you store
+    What vast enormity
+    New worlds are formed
+    With every morning
+    Tiny creatures sing out
+    Birds chant in melody
+    The sea resounds
+    And I play my tune`,
+    songUrl: "",
+    spotifyUrl: "",
+    appleMusicUrl: "",
+    bandcampUrl: "https://medvedi.bandcamp.com/album/sun-and-silhouettes",
+    youTubeUrl: "",
   },
 ];
