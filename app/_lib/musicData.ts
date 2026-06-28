@@ -43,7 +43,7 @@ export const albums: Music[] = [
     id: 1,
     smallSrc: smallImg1,
     mediumSrc: mediumImg1,
-    alt: "Take Me Back by Medvedi",
+    alt: "Early Days by Medvedi",
     songTitle: "Take Me Back",
     lyrics: `Oh take me back to where I used to be when I was younger
     Take me back to where I used to be when I was younger
@@ -73,13 +73,13 @@ export const albums: Music[] = [
     spotifyUrl: "https://open.spotify.com/album/67wGQ2Q8k1kbWHxFlqPyLy",
     appleMusicUrl: "https://music.apple.com/us/album/early-days/1749123781",
     bandcampUrl: "https://medvedi.bandcamp.com/album/early-days",
-    youTubeUrl: "https://youtu.be/4H2zEKk3S6I?si=9NwYDyceY6kZe4vQ",
+    youTubeUrl: "https://youtu.be/4H2zEKk3S6I",
   },
   {
     id: 2,
     smallSrc: smallImg2,
     mediumSrc: mediumImg2,
-    alt: "Taylor Wanted to Call This Song Beorn by Medvedi",
+    alt: "Half Asleep on the Floor by Medvedi",
     songTitle: "Taylor Wanted to Call This Song Beorn",
     lyrics: `Why can’t we lay our burdens down
     And let them be taken as they are
@@ -103,13 +103,13 @@ export const albums: Music[] = [
     appleMusicUrl:
       "https://music.apple.com/us/album/half-asleep-on-the-floor-ep/1749001780",
     bandcampUrl: "https://medvedi.bandcamp.com/album/half-asleep-on-the-floor",
-    youTubeUrl: "https://youtu.be/boHZ9-_Vvdw?si=stoP77pdYXmZ--Vg",
+    youTubeUrl: "https://youtu.be/boHZ9-_Vvdw",
   },
   {
     id: 3,
     smallSrc: smallImg3,
     mediumSrc: mediumImg3,
-    alt: "Eight Years by Medvedi",
+    alt: "Coppertone Girls by Medvedi",
     songTitle: "Eight Years",
     lyrics: `Today, I lost myself
     I didn’t know where to go
@@ -137,13 +137,13 @@ export const albums: Music[] = [
     appleMusicUrl:
       "https://music.apple.com/us/album/coppertone-girls-single/1748716438",
     bandcampUrl: "https://medvedi.bandcamp.com/album/coppertone-girls",
-    youTubeUrl: "https://youtu.be/5Ub4gP0Jqw8?si=a9-umdWS7x3oxT01",
+    youTubeUrl: "https://youtu.be/5Ub4gP0Jqw8",
   },
   {
     id: 4,
     smallSrc: smallImg4,
     mediumSrc: mediumImg4,
-    alt: "Northern California by Medvedi",
+    alt: "BUG by Medvedi",
     songTitle: "Northern California",
     lyrics: `I hope that you call back soon
     And I hope that this drive wasn’t just for nothing
@@ -171,17 +171,17 @@ export const albums: Music[] = [
     Just try your best not to forget
     Just try your best not to forget
     Just try your best not to forget me`,
-    songUrl: "",
-    spotifyUrl: "",
+    songUrl: "https://open.spotify.com/embed/track/4mejw7A3nHxYmhlDzzbJWo",
+    spotifyUrl: "https://open.spotify.com/album/0vtCt25l0dXZLl2HaBf3eh",
     appleMusicUrl: "",
     bandcampUrl: "https://medvedi.bandcamp.com/album/bug",
-    youTubeUrl: "",
+    youTubeUrl: "https://youtu.be/NnswvL1rdXM",
   },
   {
     id: 5,
     smallSrc: smallImg5,
     mediumSrc: mediumImg5,
-    alt: "Hare or Tortoise by Medvedi",
+    alt: "Upside Down by Medvedi",
     songTitle: "Hare or Tortoise",
     lyrics: `I let you in 
     The moment that you said 
@@ -208,7 +208,7 @@ export const albums: Music[] = [
     spotifyUrl: "https://open.spotify.com/album/0SBYiHSIjaaVEhZCQ2uY8E",
     appleMusicUrl: "https://music.apple.com/us/album/upside-down/1293436053",
     bandcampUrl: "https://medvedi.bandcamp.com/album/upside-down",
-    youTubeUrl: "https://youtu.be/A4hkSsZlWZQ?si=MPxZpThCPVKbCfV8",
+    youTubeUrl: "https://youtu.be/A4hkSsZlWZQ",
   },
   {
     id: 6,
@@ -244,7 +244,7 @@ export const albums: Music[] = [
     appleMusicUrl:
       "https://music.apple.com/us/album/dreams-acoustic-ep/1368574612",
     bandcampUrl: "https://medvedi.bandcamp.com/album/dreams",
-    youTubeUrl: "https://www.youtube.com/watch?v=QKcZK1_YKn8",
+    youTubeUrl: "https://youtu.be/QKcZK1_YKn8",
   },
   {
     id: 7,
@@ -299,7 +299,7 @@ export const albums: Music[] = [
     spotifyUrl: "https://open.spotify.com/album/4m7JITAWPIkfBO7V7VlDXV",
     appleMusicUrl: "https://music.apple.com/us/album/unwind/1414643546",
     bandcampUrl: "https://medvedi.bandcamp.com/album/unwind",
-    youTubeUrl: "https://www.youtube.com/watch?v=JWNAiDOyiZg",
+    youTubeUrl: "https://youtu.be/JWNAiDOyiZg",
   },
   {
     id: 8,
@@ -341,13 +341,13 @@ export const albums: Music[] = [
     appleMusicUrl:
       "https://music.apple.com/us/album/new-world-single/1444547590",
     bandcampUrl: "https://medvedi.bandcamp.com/album/new-world",
-    youTubeUrl: "https://www.youtube.com/watch?v=vqSmRVXyCvo",
+    youTubeUrl: "https://youtu.be/vqSmRVXyCvo",
   },
   {
     id: 9,
     smallSrc: smallImg9,
     mediumSrc: mediumImg9,
-    alt: "Addicted by Medvedi",
+    alt: "Death and Rebirth by Medvedi",
     songTitle: "Addicted",
     lyrics: `Doors open
     I can see the world is suffering
@@ -410,13 +410,13 @@ export const albums: Music[] = [
     appleMusicUrl:
       "https://music.apple.com/us/album/death-and-rebirth/1533671864",
     bandcampUrl: "https://medvedi.bandcamp.com/album/death-and-rebirth",
-    youTubeUrl: "https://youtu.be/mqaY1toX7ZM?si=rIOTPEIvZRv0Bnkw",
+    youTubeUrl: "https://youtu.be/mqaY1toX7ZM",
   },
   {
     id: 10,
     smallSrc: smallImg10,
     mediumSrc: mediumImg10,
-    alt: "Here In My World by Medvedi",
+    alt: "I to Eye by Medvedi",
     songTitle: "Here In My World",
     lyrics: `Walking in this place
     I can see patterns in the space
@@ -457,17 +457,17 @@ export const albums: Music[] = [
     I drive through deserts
     You are the thing you need
     You are me`,
-    songUrl: "",
-    spotifyUrl: "",
+    songUrl: "https://open.spotify.com/embed/track/33qlMqUktu3fFkspCbie5u",
+    spotifyUrl: "https://open.spotify.com/album/4YzZObqZsOArHN9HUhdrpT",
     appleMusicUrl: "",
     bandcampUrl: "https://medvedi.bandcamp.com/album/i-to-eye",
-    youTubeUrl: "",
+    youTubeUrl: "https://youtu.be/dNootUwC1WQ",
   },
   {
     id: 11,
     smallSrc: smallImg11,
     mediumSrc: mediumImg11,
-    alt: "Silhouettes by Medvedi",
+    alt: "Sun and Silhouettes by Medvedi",
     songTitle: "Silhouettes",
     lyrics: `Breathing your sweet air
     Birds swimming in the wind
@@ -513,10 +513,10 @@ export const albums: Music[] = [
     Birds chant in melody
     The sea resounds
     And I play my tune`,
-    songUrl: "",
-    spotifyUrl: "",
+    songUrl: "https://open.spotify.com/embed/track/5EvKXIVouRrS9kHjayOvvX",
+    spotifyUrl: "https://open.spotify.com/album/4UmoTmO3C1EwY6YbyYqCQ2",
     appleMusicUrl: "",
     bandcampUrl: "https://medvedi.bandcamp.com/album/sun-and-silhouettes",
-    youTubeUrl: "",
+    youTubeUrl: "https://youtu.be/IPqiiFNkRxo",
   },
 ];
