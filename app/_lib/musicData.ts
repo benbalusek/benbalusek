@@ -459,7 +459,7 @@ export const albums: Music[] = [
     You are me`,
     songUrl: "https://open.spotify.com/embed/track/33qlMqUktu3fFkspCbie5u",
     spotifyUrl: "https://open.spotify.com/album/4YzZObqZsOArHN9HUhdrpT",
-    appleMusicUrl: "",
+    appleMusicUrl: "https://music.apple.com/us/album/i-to-eye/6785355961",
     bandcampUrl: "https://medvedi.bandcamp.com/album/i-to-eye",
     youTubeUrl: "https://youtu.be/dNootUwC1WQ",
   },
@@ -515,7 +515,8 @@ export const albums: Music[] = [
     And I play my tune`,
     songUrl: "https://open.spotify.com/embed/track/5EvKXIVouRrS9kHjayOvvX",
     spotifyUrl: "https://open.spotify.com/album/4UmoTmO3C1EwY6YbyYqCQ2",
-    appleMusicUrl: "",
+    appleMusicUrl:
+      "https://music.apple.com/us/album/sun-and-silhouettes-single/6785334050",
     bandcampUrl: "https://medvedi.bandcamp.com/album/sun-and-silhouettes",
     youTubeUrl: "https://youtu.be/IPqiiFNkRxo",
   },
