@@ -23,7 +23,7 @@ function Page() {
         </h1>
 
         <p className="text-sm sm:text-base 2xl:text-lg text-neutral-700 font-light leading-tight drop-shadow-md">
-          ffilm photographer · musician · frontend developer
+          film photographer · musician · frontend developer
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">
