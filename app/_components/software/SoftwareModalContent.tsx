@@ -189,14 +189,14 @@ function SoftwareModalContent({ software, onClose }: SoftwareProps) {
               {software.websiteUrl && (
                 <ExternalLink
                   href={software.websiteUrl}
-                  className="text-sm xl:text-base"
+                  className="text-blue-600 underline text-sm xl:text-base"
                 >
                   Live Site
                 </ExternalLink>
               )}
               <ExternalLink
                 href={software.gitHubUrl}
-                className="text-sm xl:text-base"
+                className="text-blue-600 underline text-sm xl:text-base "
               >
                 GitHub
               </ExternalLink>

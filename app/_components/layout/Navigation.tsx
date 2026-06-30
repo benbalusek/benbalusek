@@ -38,19 +38,29 @@ function Navigation() {
       {/* Nav Links for large screens */}
       <ul className="hidden md:flex items-center gap-10">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className="hover:underline">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/photography">Photography</Link>
+          <Link href="/photography" className="hover:underline">
+            Photography
+          </Link>
         </li>
         <li>
-          <Link href="/music">Music</Link>
+          <Link href="/music" className="hover:underline">
+            Music
+          </Link>
         </li>
         <li>
-          <Link href="/software">Software</Link>
+          <Link href="/software" className="hover:underline">
+            Software
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" className="hover:underline">
+            About
+          </Link>
         </li>
       </ul>
 

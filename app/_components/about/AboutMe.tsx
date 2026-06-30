@@ -35,9 +35,9 @@ function AboutMe() {
         <div className="text-lg leading-relaxed">
           <h2 className="text-2xl font-semibold mb-4">Hi, I’m Ben</h2>
           <p>
-            A photographer, musician, and software developer from Texas. I shoot
-            35mm and 120 film in wild places, write songs that come from a place
-            of intuition, and develop apps that connect people and solve
+            A film photographer, musician, and frontend developer from Texas. I
+            shoot 35mm and 120 film in wild places, write songs that come from a
+            place of intuition, and develop apps that connect people and solve
             problems.
           </p>
           <br />

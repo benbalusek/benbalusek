@@ -77,11 +77,10 @@ function PhotoModalContent({ image, onClose }: PhotoModalProps) {
               >
                 <ExternalLink
                   href="https://www.instagram.com/benbalusek/"
-                  className="inline-block text-sm xl:text-base mb-1.5"
+                  className="inline-block text-sm xl:text-base mb-1.5 hover:underline"
                 >
-                  Instagram
+                  Instagram →
                 </ExternalLink>
-
                 <p className="text-sm xl:text-base text-gray-600 italic">
                   Interested in a print?{" "}
                   <Link

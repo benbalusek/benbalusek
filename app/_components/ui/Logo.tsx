@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-4"
+      className="flex items-center gap-4 transition-opacity duration-200 hover:opacity-84"
       aria-label="Go to homepage"
     >
       <Image

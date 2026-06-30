@@ -16,7 +16,7 @@ function Page() {
       </h1>
       <PhotoGrid />
 
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center hover:underline">
         <ExternalLink href="https://instagram.com/benbalusek">
           Follow on Instagram →
         </ExternalLink>

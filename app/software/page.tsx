@@ -16,7 +16,7 @@ function Page() {
       </h1>
       <SoftwareGrid />
 
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center hover:underline">
         <ExternalLink href="https://github.com/benbalusek">
           View more on GitHub →
         </ExternalLink>

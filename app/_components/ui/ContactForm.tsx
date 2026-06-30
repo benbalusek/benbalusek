@@ -16,7 +16,7 @@ function ContactForm() {
 
   // Handle Change
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -49,7 +49,7 @@ function ContactForm() {
       } else {
         const errorData = await response.json().catch(() => ({}));
         setError(
-          errorData.message || "Something went wrong. Please try again."
+          errorData.message || "Something went wrong. Please try again.",
         );
       }
     } catch (err) {
@@ -117,7 +117,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={isLoading}
-        className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
+        className="px-4 py-2 bg-black text-white rounded transition-opacity duration-200 hover:opacity-80 disabled:bg-gray-400 cursor-pointer disabled:cursor-not-allowed flex items-center gap-2"
       >
         {isLoading && <SpinnerMini />}
         {isLoading ? "Sending..." : "Send"}

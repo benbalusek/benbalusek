@@ -14,7 +14,7 @@ function Page() {
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-9">Music</h1>
       <MusicGrid />
 
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center hover:underline">
         <ExternalLink href="https://instagram.com/medvedimusic">
           Follow Medvedi on Instagram →
         </ExternalLink>

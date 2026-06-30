@@ -65,6 +65,7 @@ export default function Page() {
         <Link
           href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}
           aria-label="Get in touch by email"
+          className="hover:underline"
         >
           {process.env.NEXT_PUBLIC_EMAIL_TO}
         </Link>

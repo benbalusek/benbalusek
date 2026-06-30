@@ -19,17 +19,17 @@ function Page() {
         <InvertibleVideo />
 
         <h1 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold">
-          Hi, I&apos;m Ben Balusek
+          Ben Balusek
         </h1>
 
         <p className="text-sm sm:text-base 2xl:text-lg text-neutral-700 font-light leading-tight drop-shadow-md">
-          a photographer, musician, and software developer
+          ffilm photographer · musician · frontend developer
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">
           <Link
             href="/photography"
-            className="bg-black text-white text-sm sm:text-base 2xl:text-lg px-6 py-2 rounded hover:bg-gray-800 transition"
+            className="bg-black text-white text-sm sm:text-base 2xl:text-lg px-6 py-2 rounded transition-opacity duration-200 hover:opacity-80"
           >
             View Photography
           </Link>
