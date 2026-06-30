@@ -173,7 +173,7 @@ export const albums: Music[] = [
     Just try your best not to forget me`,
     songUrl: "https://open.spotify.com/embed/track/4mejw7A3nHxYmhlDzzbJWo",
     spotifyUrl: "https://open.spotify.com/album/0vtCt25l0dXZLl2HaBf3eh",
-    appleMusicUrl: "",
+    appleMusicUrl: "https://music.apple.com/us/album/bug-ep/6785979360",
     bandcampUrl: "https://medvedi.bandcamp.com/album/bug",
     youTubeUrl: "https://youtu.be/NnswvL1rdXM",
   },
