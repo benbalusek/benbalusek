@@ -43,12 +43,12 @@ function AboutMe() {
           <br />
           <p>
             I grew up playing drums and guitar and started writing and recording
-            music under the name Medvedi in 2012 with my girlfriend, who later
-            became my wife. A year later, we bought an old camera and began
+            music under the name Medvedi in 2011 with my girlfriend, who later
+            became my wife. In 2015, we bought a Canon AE-1 and began
             documenting our hikes, camping trips, and travels on film. In 2022,
-            I taught myself web development with JavaScript and now work with a
-            team developing React Native apps. My work is inspired by nature,
-            connection, and minimalism.
+            I taught myself web development with JavaScript and now develop
+            React Native apps. My work is inspired by nature, connection, and
+            simplicity.
           </p>
         </div>
 
