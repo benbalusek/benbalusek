@@ -36,19 +36,19 @@ function AboutMe() {
           <h2 className="text-2xl font-semibold mb-4">Hi, I’m Ben</h2>
           <p>
             A film photographer, musician, and frontend developer from Texas. I
-            shoot 35mm and 120 film in wild places, write songs that come from a
-            place of intuition, and develop apps that connect people and solve
+            shoot 35mm and 120 film in wild places, write psychedelic indie
+            music, and build apps and websites that connect people and solve
             problems.
           </p>
           <br />
           <p>
             I grew up playing drums and guitar and started writing and recording
             my own music under the name Medvedi in 2011 with my girlfriend, who
-            later became my wife. In 2015, we bought a film camera and began
-            documenting our hikes, camping trips, and travels on 35mm and
-            eventually 120 film. In 2022, I taught myself web development and
-            now build apps with React, Next.js, and TypeScript. My work is
-            inspired by nature, connection, and simplicity.
+            later became my wife. In 2015, we bought an old camera and began
+            documenting our hikes, camping trips, and travels on film. In 2022,
+            I taught myself web development and now build with React, Next.js,
+            and TypeScript. My work is inspired by nature, connection, and
+            simplicity.
           </p>
         </div>
 
