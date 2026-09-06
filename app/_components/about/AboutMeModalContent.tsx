@@ -16,7 +16,7 @@ function AboutMeModalContent({ image, onClose }: AboutMeModalProps) {
   const imageList = image.mediumSrcs;
   const { currentIndex, nextImage, prevImage } = useImageCarousel(
     imageList,
-    onClose
+    onClose,
   );
 
   // Calculate container dimensions for modal
@@ -51,7 +51,7 @@ function AboutMeModalContent({ image, onClose }: AboutMeModalProps) {
           className="object-contain w-full max-h-[85vh] shadow cursor-pointer"
           placeholder="blur"
           loading="eager"
-          quality={80}
+          quality={75}
           onClick={onClose}
         />
       </div>

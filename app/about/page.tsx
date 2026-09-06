@@ -22,7 +22,7 @@ export default function Page() {
           className="w-full object-cover"
           placeholder="blur"
           priority
-          quality={80}
+          quality={75}
         />
         <div className="absolute inset-0 flex items-start justify-center pt-3 sm:pt-4 md:pt-6 lg:pt-8 xl:pt-10">
           <h1 className="text-4xl lg:text-5xl font-bold text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">

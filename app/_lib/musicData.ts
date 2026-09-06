@@ -11,6 +11,7 @@ import smallImg8 from "@/public/music/08-album-sm.jpg";
 import smallImg9 from "@/public/music/09-album-sm.jpg";
 import smallImg10 from "@/public/music/10-album-sm.jpg";
 import smallImg11 from "@/public/music/11-album-sm.jpg";
+import smallImg12 from "@/public/music/12-album-sm.jpg";
 
 import mediumImg1 from "@/public/music/01-album-md.jpg";
 import mediumImg2 from "@/public/music/02-album-md.jpg";
@@ -23,6 +24,7 @@ import mediumImg8 from "@/public/music/08-album-md.jpg";
 import mediumImg9 from "@/public/music/09-album-md.jpg";
 import mediumImg10 from "@/public/music/10-album-md.jpg";
 import mediumImg11 from "@/public/music/11-album-md.jpg";
+import mediumImg12 from "@/public/music/12-album-md.jpg";
 
 export type Music = {
   id: number;
@@ -519,5 +521,74 @@ export const albums: Music[] = [
       "https://music.apple.com/us/album/sun-and-silhouettes-single/6785334050",
     bandcampUrl: "https://medvedi.bandcamp.com/album/sun-and-silhouettes",
     youTubeUrl: "https://youtu.be/IPqiiFNkRxo",
+  },
+  {
+    id: 12,
+    smallSrc: smallImg12,
+    mediumSrc: mediumImg12,
+    alt: "Serpent by Medvedi",
+    songTitle: "Serpent",
+    lyrics: `I’m a serpent
+    Whispering away my song
+    Everything you know is so wrong
+    Everything knows what you’ve done
+
+    If life has purpose
+    Let it be to sing our own song
+    Let it be to think for our own
+    Let it be right here all along
+    Let it be to reap what we sow
+    Let it be the death of ego
+
+    This life is so perfect
+    Yet we throw away what we love
+    Burning down truth down with God
+    Left with a body we pay for
+
+    Am I its servant
+    Or a part of God
+    These questions won’t leave me alive
+    Questions won’t leave me alive
+    Questions won’t leave me alive
+    Questions won’t leave me alive
+
+    If it’s not working
+    Why don’t you make it a dance
+    Moved by the wind in a trance
+    Letting the stream carve its path out
+
+    Look in, we are empty
+    But we still think we are I
+    Turning the lights off to wake up
+    Eating the fruit that we gave you
+
+    The light turns purple
+    When it meets what is unknown
+    Everything you think is a fable
+    Left out of your riddle
+
+    If our pain is worth it
+    What do we gain from our mourning
+    The answer is calling
+    The truth you are longing
+    The All is forgiving
+    Eternally bonding
+
+    All is forgiven
+    Lying awake under the stars
+    Knowledge is freedom from the gods
+    We are the answer to the cosmos
+
+    I’m your serpent
+    And I won’t leave you alone
+    Until your answer is born
+    Until your answer is born
+    Until your answer is born
+    Until your answer is born`,
+    songUrl: "https://open.spotify.com/embed/track/7nG4elxCCns5wHjnUSCunS",
+    spotifyUrl: "https://open.spotify.com/album/3pwV2OOsbU5oJ6kW47PRE3",
+    appleMusicUrl: "https://music.apple.com/us/album/serpent-single/6804456701",
+    bandcampUrl: "https://medvedi.bandcamp.com/track/serpent-2",
+    youTubeUrl: "https://youtu.be/ILjtrlIEfIc",
   },
 ];

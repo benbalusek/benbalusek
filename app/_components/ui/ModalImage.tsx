@@ -28,7 +28,7 @@ function ModalImage({
       } ${className}`}
       placeholder="blur"
       loading="eager"
-      quality={80}
+      quality={75}
     />
   );
 }
