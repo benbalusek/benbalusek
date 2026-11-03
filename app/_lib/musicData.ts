@@ -548,9 +548,6 @@ export const albums: Music[] = [
     Am I its servant
     Or a part of God
     These questions won’t leave me alive
-    Questions won’t leave me alive
-    Questions won’t leave me alive
-    Questions won’t leave me alive
 
     If it’s not working
     Why don’t you make it a dance
@@ -581,14 +578,11 @@ export const albums: Music[] = [
 
     I’m your serpent
     And I won’t leave you alone
-    Until your answer is born
-    Until your answer is born
-    Until your answer is born
     Until your answer is born`,
     songUrl: "https://open.spotify.com/embed/track/7nG4elxCCns5wHjnUSCunS",
     spotifyUrl: "https://open.spotify.com/album/3pwV2OOsbU5oJ6kW47PRE3",
     appleMusicUrl: "https://music.apple.com/us/album/serpent-single/6804456701",
     bandcampUrl: "https://medvedi.bandcamp.com/track/serpent-2",
-    youTubeUrl: "https://youtu.be/_em9IRO7_Dw",
+    youTubeUrl: "https://youtu.be/ILjtrlIEfIc",
   },
 ];
