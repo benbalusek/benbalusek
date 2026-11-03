@@ -589,6 +589,6 @@ export const albums: Music[] = [
     spotifyUrl: "https://open.spotify.com/album/3pwV2OOsbU5oJ6kW47PRE3",
     appleMusicUrl: "https://music.apple.com/us/album/serpent-single/6804456701",
     bandcampUrl: "https://medvedi.bandcamp.com/track/serpent-2",
-    youTubeUrl: "https://youtu.be/ILjtrlIEfIc",
+    youTubeUrl: "https://youtu.be/_em9IRO7_Dw",
   },
 ];
