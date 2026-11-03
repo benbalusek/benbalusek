@@ -478,7 +478,7 @@ export const albums: Music[] = [
     To fight for gain
     In pain, we are one
     Relive the steady flow
-    You’re in my room then I’m on the road
+    You’re in my room and I’m on the road
 
     Silhouettes
     Paint the world below
@@ -511,7 +511,7 @@ export const albums: Music[] = [
     What vast enormity
     New worlds are formed
     With every morning
-    Tiny creatures sing out
+    Cicadas sing out
     Birds chant in melody
     The sea resounds
     And I play my tune`,
