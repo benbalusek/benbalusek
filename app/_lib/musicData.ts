@@ -366,7 +366,7 @@ export const albums: Music[] = [
     Addicted to getting stoned
 
     Call my name
-    I’ll respond that it’s all in vein
+    I’ll respond that it’s all in vain
     Seeking solace from your pain
     For all you take, what’s left to gain
     I am the spirit in your dreams
