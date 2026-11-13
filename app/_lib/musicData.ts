@@ -12,6 +12,7 @@ import smallImg9 from "@/public/music/09-album-sm.jpg";
 import smallImg10 from "@/public/music/10-album-sm.jpg";
 import smallImg11 from "@/public/music/11-album-sm.jpg";
 import smallImg12 from "@/public/music/12-album-sm.jpg";
+import smallImg13 from "@/public/music/13-album-sm.jpg";
 
 import mediumImg1 from "@/public/music/01-album-md.jpg";
 import mediumImg2 from "@/public/music/02-album-md.jpg";
@@ -25,6 +26,7 @@ import mediumImg9 from "@/public/music/09-album-md.jpg";
 import mediumImg10 from "@/public/music/10-album-md.jpg";
 import mediumImg11 from "@/public/music/11-album-md.jpg";
 import mediumImg12 from "@/public/music/12-album-md.jpg";
+import mediumImg13 from "@/public/music/13-album-md.jpg";
 
 export type Music = {
   id: number;
@@ -583,6 +585,51 @@ export const albums: Music[] = [
     spotifyUrl: "https://open.spotify.com/album/3pwV2OOsbU5oJ6kW47PRE3",
     appleMusicUrl: "https://music.apple.com/us/album/serpent-single/6804456701",
     bandcampUrl: "https://medvedi.bandcamp.com/track/serpent-2",
+    youTubeUrl: "https://youtu.be/_em9IRO7_Dw",
+  },
+  {
+    id: 13,
+    smallSrc: smallImg13,
+    mediumSrc: mediumImg13,
+    alt: "Disappear by Medvedi",
+    songTitle: "Disappear",
+    lyrics: `When I’m on the road
+    The world it feels so still
+    These lines they smile back 
+    Dear friend, I don’t know when we’ll meet again
+    No sleep until the coast
+    These bugs they paint my window
+    Watch deer turn into crows
+    But no one knows where we begin
+
+    Everything is change
+    Watch it disappear
+    Embrace it 
+    Everything you feel
+    It’s a race you can’t win
+    And what’s behind you knows
+    It’s erasing you
+
+    Singing along with George
+    And John and Paul join in
+    The sun it smiles back again
+    But I don’t know where we’re sleeping
+    Rivers howling at the moon
+    Jeff haunting mountains in my view
+    Savage is humming to the rain and sand
+    And I can feel the band inside the van
+
+    Everything is change
+    Fall down get back up again
+    Embrace it
+    Everything you fear
+    It’s amazing how we begin to heal
+    It’s era-`,
+    songUrl: "https://open.spotify.com/embed/track/1aCZds9R1euviaakiG5dDr",
+    spotifyUrl: "https://open.spotify.com/album/7yd5DMZJGz8g2Ih3JWHT0O",
+    appleMusicUrl:
+      "https://music.apple.com/us/album/disappear-single/6829986549",
+    bandcampUrl: "https://medvedi.bandcamp.com/album/disappear",
     youTubeUrl: "https://youtu.be/_em9IRO7_Dw",
   },
 ];
