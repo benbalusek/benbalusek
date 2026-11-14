@@ -208,7 +208,7 @@ export const images: Photo[] = [
     id: 12,
     smallSrc: smallImg12,
     mediumSrc: mediumImg12,
-    title: "Shooting Super 8 at Golden Hour",
+    title: "Sunset on Super 8",
     location: "White Sands National Park",
     state: "New Mexico",
     camera: "Mamiya 645",
