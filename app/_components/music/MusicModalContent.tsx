@@ -19,6 +19,8 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
 
+  const hasVideo = Boolean(album.videoId);
+
   // Calculate container dimensions for modal
   const containerDimensions = useModalDimensions({
     imageWidth: 1000,
@@ -32,94 +34,112 @@ function MusicModalContent({ album, onClose }: MusicModalProps) {
     <Modal
       onClose={onClose}
       ariaLabel={`${album.alt} album details`}
-      className="max-w-2xl"
+      className={hasVideo ? "w-[90vw] max-w-[1000px]" : "max-w-2xl"}
     >
       <div className="flex flex-col max-h-[90vh] w-full">
-        <ToggleableOverlay
-          setShowOverlay={setShowOverlay}
-          className="mb-4 flex-1 overflow-hidden"
-        >
-          <div
-            className="relative group mx-auto"
-            style={{
-              width: containerDimensions.width,
-              height: containerDimensions.height,
-              maxHeight: "90vh",
-            }}
-          >
-            {/* Show Overlay Hint */}
-            {!showOverlay && <OverlayHint />}
-            {/* Modal Image */}
-            <ModalImage
-              key={album.mediumSrc.src}
-              src={album.mediumSrc}
-              alt={album.alt}
-              width={1000}
-              height={1000}
-              showOverlay={showOverlay}
-              className="w-full h-full"
-            />
-            {/* Show Overlay Details */}
-            {showOverlay && (
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 my-4">
-                {/* Album Details */}
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  {album.songTitle}
-                </h2>
-                <p className="text-xs sm:text-sm text-gray-700">{album.alt}</p>
-
-                <div className="mt-4 max-h-[70vh] overflow-y-auto w-full px-4 mb-2">
-                  <p className="text-sm italic whitespace-pre-line text-gray-700 mx-auto max-w-xs">
-                    {album.lyrics}
-                  </p>
-                </div>
-
-                {/* Music Links */}
-                <div
-                  onClick={(e) => e.stopPropagation()}
-                  onKeyDown={(e) => e.stopPropagation()}
-                  className="flex flex-wrap gap-3 justify-center"
-                >
-                  {album.spotifyUrl && (
-                    <ExternalLink
-                      href={album.spotifyUrl}
-                      className="text-blue-600 underline text-sm sm:text-base"
-                    >
-                      Spotify
-                    </ExternalLink>
-                  )}
-
-                  {album.appleMusicUrl && (
-                    <ExternalLink
-                      href={album.appleMusicUrl}
-                      className="text-blue-600 underline text-sm sm:text-base"
-                    >
-                      Apple Music
-                    </ExternalLink>
-                  )}
-
-                  {album.bandcampUrl && (
-                    <ExternalLink
-                      href={album.bandcampUrl}
-                      className="text-blue-600 underline text-sm sm:text-base"
-                    >
-                      Bandcamp
-                    </ExternalLink>
-                  )}
-
-                  {album.youTubeUrl && (
-                    <ExternalLink
-                      href={album.youTubeUrl}
-                      className="text-blue-600 underline text-sm sm:text-base"
-                    >
-                      YouTube
-                    </ExternalLink>
-                  )}
-                </div>
-              </div>
-            )}
+        {hasVideo ? (
+          <div className="w-full mb-4">
+            <div className="relative w-full aspect-video overflow-hidden rounded-lg">
+              <iframe
+                key={album.videoId}
+                title={`${album.songTitle} music video`}
+                src={`https://www.youtube-nocookie.com/embed/${album.videoId}`}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
           </div>
-        </ToggleableOverlay>
+        ) : (
+          <ToggleableOverlay
+            setShowOverlay={setShowOverlay}
+            className="mb-4 flex-1 overflow-hidden"
+          >
+            <div
+              className="relative group mx-auto"
+              style={{
+                width: containerDimensions.width,
+                height: containerDimensions.height,
+                maxHeight: "90vh",
+              }}
+            >
+              {/* Show Overlay Hint */}
+              {!showOverlay && <OverlayHint />}
+              {/* Modal Image */}
+              <ModalImage
+                key={album.mediumSrc.src}
+                src={album.mediumSrc}
+                alt={album.alt}
+                width={1000}
+                height={1000}
+                showOverlay={showOverlay}
+                className="w-full h-full"
+              />
+              {/* Show Overlay Details */}
+              {showOverlay && (
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 my-4">
+                  {/* Album Details */}
+                  <h2 className="text-xl sm:text-2xl font-bold">
+                    {album.songTitle}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-gray-700">
+                    {album.alt}
+                  </p>
+
+                  <div className="mt-4 max-h-[70vh] overflow-y-auto w-full px-4 mb-2">
+                    <p className="text-sm italic whitespace-pre-line text-gray-700 mx-auto max-w-xs">
+                      {album.lyrics}
+                    </p>
+                  </div>
+
+                  {/* Music Links */}
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    onKeyDown={(e) => e.stopPropagation()}
+                    className="flex flex-wrap gap-3 justify-center"
+                  >
+                    {album.spotifyUrl && (
+                      <ExternalLink
+                        href={album.spotifyUrl}
+                        className="text-blue-600 underline text-sm sm:text-base"
+                      >
+                        Spotify
+                      </ExternalLink>
+                    )}
+
+                    {album.appleMusicUrl && (
+                      <ExternalLink
+                        href={album.appleMusicUrl}
+                        className="text-blue-600 underline text-sm sm:text-base"
+                      >
+                        Apple Music
+                      </ExternalLink>
+                    )}
+
+                    {album.bandcampUrl && (
+                      <ExternalLink
+                        href={album.bandcampUrl}
+                        className="text-blue-600 underline text-sm sm:text-base"
+                      >
+                        Bandcamp
+                      </ExternalLink>
+                    )}
+
+                    {album.youTubeUrl && (
+                      <ExternalLink
+                        href={album.youTubeUrl}
+                        className="text-blue-600 underline text-sm sm:text-base"
+                      >
+                        YouTube
+                      </ExternalLink>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          </ToggleableOverlay>
+        )}
 
         {album.songUrl && !iframeLoaded && <Spinner />}
 

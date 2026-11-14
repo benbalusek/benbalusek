@@ -40,6 +40,7 @@ export type Music = {
   appleMusicUrl: string;
   bandcampUrl: string;
   youTubeUrl: string;
+  videoId?: string;
 };
 
 export const albums: Music[] = [
@@ -415,6 +416,7 @@ export const albums: Music[] = [
       "https://music.apple.com/us/album/death-and-rebirth/1533671864",
     bandcampUrl: "https://medvedi.bandcamp.com/album/death-and-rebirth",
     youTubeUrl: "https://youtu.be/mqaY1toX7ZM",
+    videoId: "mqaY1toX7ZM",
   },
   {
     id: 10,
@@ -631,5 +633,6 @@ export const albums: Music[] = [
       "https://music.apple.com/us/album/disappear-single/6829986549",
     bandcampUrl: "https://medvedi.bandcamp.com/album/disappear",
     youTubeUrl: "https://youtu.be/VcYEmqS_c6c",
+    videoId: "VcYEmqS_c6c",
   },
 ];
