@@ -630,6 +630,6 @@ export const albums: Music[] = [
     appleMusicUrl:
       "https://music.apple.com/us/album/disappear-single/6829986549",
     bandcampUrl: "https://medvedi.bandcamp.com/album/disappear",
-    youTubeUrl: "https://youtu.be/_em9IRO7_Dw",
+    youTubeUrl: "https://youtu.be/VcYEmqS_c6c",
   },
 ];
