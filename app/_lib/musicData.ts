@@ -619,7 +619,7 @@ export const albums: Music[] = [
     Rivers howling at the moon
     Jeff haunting mountains in my view
     Savage is humming to the rain and sand
-    And I can feel the band inside the van
+    And I could feel the band inside the van
 
     Everything is change
     Fall down get back up again
